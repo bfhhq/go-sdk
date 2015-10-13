@@ -104,3 +104,10 @@ func CreatePlayToken(accessKey, secretKey, fid string, timeOut time.Duration) st
 
 	return createUrlToken(url, accessKey, secretKey, timeOut)
 }
+
+func CreateDownloadToken(accessKey, secretKey, fid string, timeOut time.Duration) string {
+
+	url := "id=" + fid
+
+	return createUrlToken(url, accessKey, secretKey, timeOut)
+}
